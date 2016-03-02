@@ -1,0 +1,111 @@
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Richard Wotzlaw - <span data-ng-bind="'OCCUPATION' | translate" /></h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="row profile-bullet-point">
+            <div
+                class="col-xs-12 col-sm-4 col-md-2 col-lg-2 category"
+                data-ng-bind="'BORN' | translate"></div>
+            <div
+                class="col-xs-12 col-sm-8 col-md-10 col-lg-10">
+                <span data-ng-bind="'1989-10-10' | date: localeDateFormat()"></span>
+                <span data-ng-bind="'IN' | translate"></span>
+                Karlsburg
+            </div>
+        </div>
+
+        <div class="row profile-bullet-point">
+            <div
+                class="col-xs-12 col-sm-4 col-md-2 col-lg-2 category"
+                data-ng-bind="'EDUCATION' | translate"></div>
+            <div
+                class="col-xs-12 col-sm-8 col-md-10 col-lg-10">
+                <span data-ng-bind="'TU_DRESDEN' | translate"></span>
+                <span>(Dipl.-Medieninf.)</span>
+            </div>
+        </div>
+
+        <div class="row profile-bullet-point">
+            <div
+                class="col-xs-12 col-sm-4 col-md-2 col-lg-2 category"
+                data-ng-bind="'LOCATION' | translate"></div>
+            <div
+                class="col-xs-12 col-sm-8 col-md-10 col-lg-10">
+                Berlin
+            </div>
+        </div>
+
+        <div class="row profile-bullet-point">
+            <div
+                class="col-xs-12 col-sm-4 col-md-2 col-lg-2 category">Github</div>
+            <div
+                class="col-xs-12 col-sm-8 col-md-10 col-lg-10">
+                <a href="https://github.com/gannimet">https://github.com/gannimet</a>
+            </div>
+        </div>
+
+        <div class="row profile-bullet-point">
+            <div
+                class="col-xs-12 col-sm-4 col-md-2 col-lg-2 category"
+                data-ng-bind="'EMAIL' | translate"></div>
+            <div
+                class="col-xs-12 col-sm-8 col-md-10 col-lg-10">
+                <a href="{{mailtoURL}}">info@colimit.de</a>
+            </div>
+        </div>
+
+        <div class="row profile-bullet-point">
+            <div
+                class="col-xs-12 col-sm-4 col-md-2 col-lg-2 category"
+                data-ng-bind="'SKILLS' | translate"></div>
+            <div
+                class="col-xs-12 col-sm-8 col-md-10 col-lg-10">
+                <dl id="skills">
+                    <dt data-ng-bind="'EXPERT' | translate"></dt>
+                    <dd>
+                        <ul class="skills-list">
+                            <li class="technology">Angular.js</li>
+                            <li class="technology">Javascript</li>
+                            <li class="technology">HTML 5</li>
+                            <li class="technology">Java</li>
+                            <li class="technology">jQuery</li>
+                            <li class="technology">Karma + Jasmine</li>
+                            <li class="technology">SQL</li>
+                            <li class="technology">REST/HTTP</li>
+                            <li class="tool">Sublime Text</li>
+                            <li class="tool">Eclipse</li>
+                            <li class="tool">Atom</li>
+                            <li class="tool">Command line</li>
+                        </ul>
+                    </dd>
+
+                    <dt data-ng-bind="'INTERMEDIATE' | translate"></dt>
+                    <dd>
+                        <ul class="skills-list">
+                            <li class="technology">CSS 3</li>
+                            <li class="technology">PHP</li>
+                            <li class="technology">node.js + Express</li>
+                            <li class="technology">LESS</li>
+                            <li class="technology">Grunt</li>
+                            <li class="technology">Gulp</li>
+                            <li class="tool">Git</li>
+                            <li class="tool">SVN</li>
+                            <li class="tool">Webstorm</li>
+                        </ul>
+                    </dd>
+
+                    <dt data-ng-bind="'BASIC' | translate"></dt>
+                    <dd>
+                        <ul class="skills-list">
+                            <li class="technology">CouchDB</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>

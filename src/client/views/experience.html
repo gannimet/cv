@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-xs-12">
+        <h1 data-ng-bind="'EXPERIENCE' | translate"></h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <h2 data-ng-bind="'PROJECTS' | translate"></h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <ul id="projects-list">
+            <li
+                data-ng-repeat="projectItem in projectItems"
+                id="p-{{projectItem.id}}">
+                <h3 class="project-titleblock">
+                    <span
+                        class="project-name"
+                        data-ng-bind="projectItem.name">
+                    </span>
+                    <span
+                        class="project-timespan-begin"
+                        data-ng-bind="projectItem.timespan.begin"></span>
+                    <span class="project-timespan-dash">-</span>
+                    <span
+                        class="project-timespan-end"
+                        data-ng-bind="projectItem.timespan.end"></span>
+                </h3>
+                <div data-ng-if="projectItem.image" class="project-imageblock">
+                    <img src="{{projectItem.image}}" alt="projectItem.customer" />
+                </div>
+                <div class="project-textblock">
+                    <div
+                        class="project-description"
+                        data-ng-bind="projectItem.description"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <h2 data-ng-bind="'EDUCATION' | translate"></h2>
+    </div>
+</div>
