@@ -39,7 +39,6 @@ body {
                     clear: left;
                     font-weight: normal;
                     padding-top: 0.7em;
-                    //border-bottom: 1px dotted lighten(@borderPrimaryColor, 30%);
                     width: 30%;
                 }
 
@@ -69,6 +68,11 @@ body {
                     li.tool {
                         border-color: #fc6;
                         background-color: #fee;
+                    }
+
+                    li.behavior {
+                        border-color: #72f9c6;
+                        background-color: #e4f6db;
                     }
                 }
             }
@@ -114,6 +118,12 @@ body {
                         font-weight: bold;
                         padding-right: 0.5em;
                     }
+
+                    .project-link {
+                        .project-link-image {
+                            height: 1.1em;
+                        }
+                    }
                 }
 
                 .project-imageblock > img {
@@ -123,9 +133,26 @@ body {
                 .project-textblock {
                     text-align: justify;
                 }
+
+                .project-technologiesblock {
+                    margin-top: 0.4em;
+                    line-height: 2em;
+
+                    .project-used-technologies {
+                        margin-right: 8px;
+                    }
+
+                    .project-technology {
+                        border-radius: 6px;
+                        padding: 2px 5px;
+                        margin-right: 5px;
+                        background-color: #ededed;
+                        border: 1px solid #dedede;
+                    }
+                }
             }
 
-            li:nth-child(odd) {
+            li:nth-child(even) {
                 .project-imageblock {
                     float: left;
 
@@ -135,11 +162,11 @@ body {
                 }
 
                 .project-titleblock {
-                    text-align: left;
+                    text-align: right;
                 }
             }
 
-            li:nth-child(even) {
+            li:nth-child(odd) {
                 .project-imageblock {
                     float: right;
 
@@ -149,7 +176,7 @@ body {
                 }
 
                 .project-titleblock {
-                    text-align: right;
+                    text-align: left;
                 }
             }
 
@@ -161,6 +188,10 @@ body {
             #p-card-crash > .project-imageblock > img{
                 width: 120px;
                 background-color: #fff;
+            }
+
+            #p-holdem-tight > .project-imageblock > img {
+                width: 120px;
             }
         }
     }

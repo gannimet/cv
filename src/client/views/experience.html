@@ -23,11 +23,23 @@
                     </span>
                     <span
                         class="project-timespan-begin"
-                        data-ng-bind="projectItem.timespan.begin"></span>
+                        data-ng-bind="projectItem.timespan.begin | translate"></span>
                     <span class="project-timespan-dash">-</span>
                     <span
                         class="project-timespan-end"
-                        data-ng-bind="projectItem.timespan.end"></span>
+                        data-ng-bind="projectItem.timespan.end | translate"></span>
+                    <span
+                        class="project-link"
+                        data-ng-if="projectItem.link !== undefined">
+                        &nbsp;&mdash;&nbsp;
+                        <img
+                            class="project-link-image"
+                            src="{{projectItem.link.image}}"
+                            alt="{{projectItem.link.image}}" />
+                        <a
+                            href="{{projectItem.url}}"
+                            data-ng-bind="projectItem.link.url"></a>
+                    </span>
                 </h3>
                 <div data-ng-if="projectItem.image" class="project-imageblock">
                     <img src="{{projectItem.image}}" alt="projectItem.customer" />
@@ -35,7 +47,16 @@
                 <div class="project-textblock">
                     <div
                         class="project-description"
-                        data-ng-bind="projectItem.description"></div>
+                        data-ng-bind-html="projectItem.description | translate"></div>
+                </div>
+                <div class="project-technologiesblock">
+                    <span
+                        class="project-used-technologies"
+                        data-ng-bind="'USED_TECHNOLOGIES' | translate"></span>
+                    <span
+                        class="project-technology"
+                        data-ng-repeat="technology in projectItem.technologies"
+                        data-ng-bind="technology"></span>
                 </div>
             </li>
         </ul>
@@ -44,6 +65,6 @@
 
 <div class="row">
     <div class="col-xs-12">
-        <h2 data-ng-bind="'EDUCATION' | translate"></h2>
+        <h2 data-ng-bind="'OTHER_ACTIVITIES' | translate"></h2>
     </div>
 </div>

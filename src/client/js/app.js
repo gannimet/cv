@@ -1,5 +1,6 @@
 var app = angular.module('cvApp', [
     'ngRoute',
+    'ngSanitize',
     'pascalprecht.translate',
     'cvControllers',
     'cvServices',
@@ -33,7 +34,7 @@ app.config(
         });
 
         $translateProvider
-            .useSanitizeValueStrategy('escape')
+            .useSanitizeValueStrategy('sanitize')
             .registerAvailableLanguageKeys(['en', 'de'], {
                 'en_*': 'en',
                 'de_*': 'de'

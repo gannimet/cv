@@ -3,24 +3,47 @@ var services = angular.module('cvServices');
 services.service('experienceService', ['$http', '$q', function($http, $q) {
     this.getProjectItems = function() {
         return $q.when([{
-            id: 'kiwigrid',
-            timespan: {
-                begin: '07/2015',
-                end: '12/2015'
-            },
-            name: 'Kiwigrid GmbH',
-            description: 'Für die Kiwigrid GmbH arbeitete ich an der Konzeption und Umsetzung von Komponenten für das „Solarwatt-Energy-Portal”, eine Angular.js-App mit Schnittstellen für die Energie-Manager der Firma Solarwatt. Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher keine daraus resultierende Freude nach sich zieht?',
-            image: 'img/kiwigrid-logo.svg'
-        }, {
             id: 'card-crash',
             timespan: {
                 begin: '11/2015',
                 end: '01/2016'
             },
             name: 'CardCrash',
-            description: 'CardCrash is a poker hand evaluation library written in Java. Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können. Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher keine daraus resultierende Freude nach sich zieht?',
-            url: 'https://github.com/gannimet/CardCrash',
-            image: 'img/card-crash-logo.png'
+            description: 'CARD_CRASH_DESCRIPTION',
+            link: {
+                url: 'https://github.com/gannimet/CardCrash',
+                image: 'img/github.png'
+            },
+            image: 'img/card-crash-logo.png',
+            technologies: ['Java', 'Design Patterns', 'Google Guava', 'Javadoc',
+                'Git']
+        }, {
+            id: 'kiwigrid',
+            timespan: {
+                begin: '07/2015',
+                end: '12/2015'
+            },
+            name: 'Kiwigrid GmbH',
+            description: 'KIWIGRID_DESCRIPTION',
+            image: 'img/kiwigrid-logo.svg',
+            technologies: ['Javascript', 'Angular.js', 'jQuery', 'HTML 5',
+                'Karma + Jasmine', 'npm', 'bower', 'Grunt', 'Git']
+        }, {
+            id: 'holdem-tight',
+            timespan: {
+                begin: '02/2015',
+                end: 'PRESENT'
+            },
+            name: 'Hold\'em Tight',
+            description: 'HOLDEM_TIGHT_DESCRIPTION',
+            link: {
+                url: 'https://github.com/gannimet/holdem-tight',
+                image: 'img/github.png'
+            },
+            image: 'img/holdem-tight-logo.png',
+            technologies: ['Javascript', 'Angular.js', 'jQuery', 'HTML 5',
+                'CSS 3', 'node.js + Express', 'Karma + Jasmine', 'npm', 'bower',
+                'Grunt', 'Git']
         }]);
     };
 }]);

@@ -14,5 +14,10 @@
     "PROFILE": "Profile",
     "EXPERIENCE": "Experience",
     "CONTACT": "Contact",
-    "PROJECTS": "Projects"
+    "PROJECTS": "Projects",
+    "OTHER_ACTIVITIES": "Other activities",
+    "USED_TECHNOLOGIES": "Technologies:",
+    "PRESENT": "present",
+    "KIWIGRID_DESCRIPTION": "For the green-energy startup Kiwigrid I helped design and implement components for the cloud-based \"Solarwatt Energy Portal\", an Angular.js application with interfaces to energy-managing devices manufactured by Solarwatt. My activities included refactoring of charting components allowing the visualization of power production and consumption data over time as well as unit testing frontend components using Karma and Jasmine. Additionally I was involved in the conception and implementation of newly created utility apps for clients. Among my contributions were several Angular directives for data visualization and a contact form with a REST interface.",
+    "CARD_CRASH_DESCRIPTION": "CardCrash is a poker hand evaluation library written in Java. It is loosely inspired by the similar Javascript library <a href=\"https://github.com/mdp/hoyle\">Hoyle</a>, but offers a more detailed breakdown of a hand. Among the main goals while working on CardCrash were a sensible object-oriented design of the code and creating a user-friendly programming interface. Several aspects of its code regularly serve as examples for lessons with my programming students. These include the multiton design pattern used for card creation or the definitions of the enumerations for card ranks and suits, which contain constructors and method just like a \"normal\" class; a Java language feature largely unknown even to many self-proclaimed experts."
 }

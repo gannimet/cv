@@ -79,12 +79,14 @@ gulp.task('scripts:dev', function() {
             './node_modules/jquery/dist/jquery.min.js',
             './node_modules/angular/angular.min.js',
             './node_modules/angular-route/angular-route.min.js',
+            './node_modules/angular-sanitize/angular-sanitize.min.js',
             './node_modules/bootstrap/dist/js/bootstrap.min.js',
             './node_modules/angular-translate/dist/angular-translate.min.js',
             './node_modules/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js',
             './node_modules/jquery/dist/jquery.min.map',
             './node_modules/angular/angular.min.js.map',
-            './node_modules/angular-route/angular-route.min.js.map'
+            './node_modules/angular-route/angular-route.min.js.map',
+            './node_modules/angular-sanitize/angular-sanitize.min.js.map'
         ])
         .pipe(gulp.dest('./dist/js/lib'));
 });
