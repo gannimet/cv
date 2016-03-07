@@ -9,11 +9,11 @@
         <div class="row profile-bullet-point">
             <div
                 class="col-xs-12 col-sm-4 col-md-2 col-lg-2 category"
-                data-ng-bind="'BORN' | translate"></div>
+                data-ng-bind-html="'BORN' | translate"></div>
             <div
                 class="col-xs-12 col-sm-8 col-md-10 col-lg-10">
                 <span data-ng-bind="'1989-10-10' | date: localeDateFormat()"></span>
-                <span data-ng-bind="'IN' | translate"></span>
+                <span data-ng-bind-html="'IN' | translate"></span>
                 Karlsburg
             </div>
         </div>
@@ -21,10 +21,10 @@
         <div class="row profile-bullet-point">
             <div
                 class="col-xs-12 col-sm-4 col-md-2 col-lg-2 category"
-                data-ng-bind="'EDUCATION' | translate"></div>
+                data-ng-bind-html="'EDUCATION' | translate"></div>
             <div
                 class="col-xs-12 col-sm-8 col-md-10 col-lg-10">
-                <span data-ng-bind="'TU_DRESDEN' | translate"></span>
+                <span data-ng-bind-html="'TU_DRESDEN' | translate"></span>
                 <span>(Dipl.-Medieninf.)</span>
             </div>
         </div>
@@ -32,7 +32,7 @@
         <div class="row profile-bullet-point">
             <div
                 class="col-xs-12 col-sm-4 col-md-2 col-lg-2 category"
-                data-ng-bind="'LOCATION' | translate"></div>
+                data-ng-bind-html="'LOCATION' | translate"></div>
             <div
                 class="col-xs-12 col-sm-8 col-md-10 col-lg-10">
                 Berlin
@@ -51,7 +51,7 @@
         <div class="row profile-bullet-point">
             <div
                 class="col-xs-12 col-sm-4 col-md-2 col-lg-2 category"
-                data-ng-bind="'EMAIL' | translate"></div>
+                data-ng-bind-html="'EMAIL' | translate"></div>
             <div
                 class="col-xs-12 col-sm-8 col-md-10 col-lg-10">
                 <a href="{{mailtoURL}}">info@colimit.de</a>
@@ -61,11 +61,11 @@
         <div class="row profile-bullet-point">
             <div
                 class="col-xs-12 col-sm-4 col-md-2 col-lg-2 category"
-                data-ng-bind="'SKILLS' | translate"></div>
+                data-ng-bind-html="'SKILLS' | translate"></div>
             <div
                 class="col-xs-12 col-sm-8 col-md-10 col-lg-10">
                 <dl id="skills">
-                    <dt data-ng-bind="'EXPERT' | translate"></dt>
+                    <dt data-ng-bind-html="'EXPERT' | translate"></dt>
                     <dd>
                         <ul class="skills-list">
                             <li class="technology">Angular.js</li>
@@ -86,7 +86,7 @@
                         </ul>
                     </dd>
 
-                    <dt data-ng-bind="'INTERMEDIATE' | translate"></dt>
+                    <dt data-ng-bind-html="'INTERMEDIATE' | translate"></dt>
                     <dd>
                         <ul class="skills-list">
                             <li class="technology">CSS 3</li>
@@ -101,7 +101,7 @@
                         </ul>
                     </dd>
 
-                    <dt data-ng-bind="'BASIC' | translate"></dt>
+                    <dt data-ng-bind-html="'BASIC' | translate"></dt>
                     <dd>
                         <ul class="skills-list">
                             <li class="technology">CouchDB</li>

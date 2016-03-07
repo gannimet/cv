@@ -15,8 +15,8 @@ services.service('experienceService', ['$http', '$q', function($http, $q) {
                 image: 'img/github.png'
             },
             image: 'img/card-crash-logo.png',
-            technologies: ['Java', 'Design Patterns', 'Google Guava', 'Javadoc',
-                'Git']
+            technologies: ['Java', 'Design&nbsp;Patterns', 'Google&nbsp;Guava',
+                'Javadoc', 'Git']
         }, {
             id: 'kiwigrid',
             timespan: {
@@ -26,8 +26,8 @@ services.service('experienceService', ['$http', '$q', function($http, $q) {
             name: 'Kiwigrid GmbH',
             description: 'KIWIGRID_DESCRIPTION',
             image: 'img/kiwigrid-logo.svg',
-            technologies: ['Javascript', 'Angular.js', 'jQuery', 'HTML 5',
-                'Karma + Jasmine', 'npm', 'bower', 'Grunt', 'Git']
+            technologies: ['Javascript', 'Angular.js', 'jQuery', 'HTML&nbsp;5',
+                'Karma&nbsp;+&nbsp;Jasmine', 'npm', 'bower', 'Grunt', 'Git']
         }, {
             id: 'holdem-tight',
             timespan: {
@@ -41,9 +41,9 @@ services.service('experienceService', ['$http', '$q', function($http, $q) {
                 image: 'img/github.png'
             },
             image: 'img/holdem-tight-logo.png',
-            technologies: ['Javascript', 'Angular.js', 'jQuery', 'HTML 5',
-                'CSS 3', 'node.js + Express', 'Karma + Jasmine', 'npm', 'bower',
-                'Grunt', 'Git']
+            technologies: ['Javascript', 'Angular.js', 'jQuery', 'HTML&nbsp;5',
+                'Jade', 'CSS&nbsp;3', 'node.js&nbsp;+&nbsp;Express',
+                'Karma&nbsp;+&nbsp;Jasmine', 'npm', 'bower', 'Grunt', 'Git']
         }]);
     };
 }]);

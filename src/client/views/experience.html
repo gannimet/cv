@@ -6,7 +6,7 @@
 
 <div class="row">
     <div class="col-xs-12">
-        <h2 data-ng-bind="'PROJECTS' | translate"></h2>
+        <h2 data-ng-bind-html="'PROJECTS' | translate"></h2>
     </div>
 </div>
 
@@ -19,15 +19,15 @@
                 <h3 class="project-titleblock">
                     <span
                         class="project-name"
-                        data-ng-bind="projectItem.name">
+                        data-ng-bind-html="projectItem.name">
                     </span>
                     <span
                         class="project-timespan-begin"
-                        data-ng-bind="projectItem.timespan.begin | translate"></span>
+                        data-ng-bind-html="projectItem.timespan.begin | translate"></span>
                     <span class="project-timespan-dash">-</span>
                     <span
                         class="project-timespan-end"
-                        data-ng-bind="projectItem.timespan.end | translate"></span>
+                        data-ng-bind-html="projectItem.timespan.end | translate"></span>
                     <span
                         class="project-link"
                         data-ng-if="projectItem.link !== undefined">
@@ -52,11 +52,11 @@
                 <div class="project-technologiesblock">
                     <span
                         class="project-used-technologies"
-                        data-ng-bind="'USED_TECHNOLOGIES' | translate"></span>
+                        data-ng-bind-html="'USED_TECHNOLOGIES' | translate"></span>
                     <span
                         class="project-technology"
-                        data-ng-repeat="technology in projectItem.technologies"
-                        data-ng-bind="technology"></span>
+                        data-ng-repeat-start="technology in projectItem.technologies"
+                        data-ng-bind-html="technology"></span> <span data-ng-repeat-end></span>
                 </div>
             </li>
         </ul>
@@ -65,6 +65,6 @@
 
 <div class="row">
     <div class="col-xs-12">
-        <h2 data-ng-bind="'OTHER_ACTIVITIES' | translate"></h2>
+        <h2 data-ng-bind-html="'OTHER_ACTIVITIES' | translate"></h2>
     </div>
 </div>
