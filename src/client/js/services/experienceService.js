@@ -44,6 +44,35 @@ services.service('experienceService', ['$http', '$q', function($http, $q) {
             technologies: ['Javascript', 'Angular.js', 'jQuery', 'HTML&nbsp;5',
                 'Jade', 'CSS&nbsp;3', 'node.js&nbsp;+&nbsp;Express',
                 'Karma&nbsp;+&nbsp;Jasmine', 'npm', 'bower', 'Grunt', 'Git']
+        }, {
+            id: 'scriptex',
+            timespan: {
+                begin: '02/2014',
+                end: '03/2014'
+            },
+            name: 'scriptex',
+            description: 'SCRIPTEX_DESCRIPTION',
+            link: {
+                url: 'https://github.com/gannimet/scriptex',
+                image: 'img/github.png'
+            },
+            image: 'img/scriptex.png',
+            technologies: ['Javascript', 'node.js', 'mocha', 'should.js',
+                'LaTeX', 'Git']
+        }, {
+            id: 'tetrix',
+            timespan: {
+                begin: '07/2012',
+                end: '10/2012'
+            },
+            name: 'Tetrix',
+            description: 'TETRIX_DESCRIPTION',
+            link: {
+                url: 'https://github.com/gannimet/Tetrix',
+                image: 'img/github.png'
+            },
+            image: 'img/tetrix.png',
+            technologies: ['Java', 'Design Patterns', 'Android', 'JUnit', 'SVN']
         }]);
     };
 }]);
