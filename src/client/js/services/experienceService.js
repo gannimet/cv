@@ -72,7 +72,7 @@ services.service('experienceService', ['$http', '$q', function($http, $q) {
                 image: 'img/github.png'
             },
             image: 'img/tetrix.png',
-            technologies: ['Java', 'Design Patterns', 'Android', 'JUnit', 'SVN']
+            technologies: ['Java', 'Design&nbsp;Patterns', 'Android', 'JUnit', 'SVN']
         }]);
     };
 }]);
