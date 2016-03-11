@@ -32,7 +32,7 @@ gulp.task('cleanup', function() {
 });
 
 gulp.task('images', function() {
-    var imgSrc = './src/client/img/**/*';
+    var imgSrc = ['./src/client/img/**/*'];
     var imgDst = './dist/img';
 
     return gulp

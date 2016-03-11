@@ -3,7 +3,7 @@
     <h3 class="project-titleblock">
         <span
             class="project-name"
-            data-ng-bind-html="projectItem.name">
+            data-ng-bind-html="projectItem.name | translate">
         </span>
         <span
             class="project-timespan-begin"
@@ -33,7 +33,9 @@
             class="project-description"
             data-ng-bind-html="projectItem.description | translate"></div>
     </div>
-    <div class="project-technologiesblock">
+    <div
+        class="project-technologiesblock"
+        data-ng-if="projectItem.technologies">
         <span
             class="project-used-technologies"
             data-ng-bind-html="'USED_TECHNOLOGIES' | translate"></span>

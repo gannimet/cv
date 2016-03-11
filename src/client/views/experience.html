@@ -32,3 +32,14 @@
         <h2 data-ng-bind-html="'OTHER_ACTIVITIES' | translate"></h2>
     </div>
 </div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <ul id="projects-list">
+            <data-experience-item
+                data-ng-repeat="activityItem in activityItems"
+                data-project-item="activityItem">
+            </data-experience-item>
+        </ul>
+    </div>
+</div>

@@ -75,4 +75,35 @@ services.service('experienceService', ['$http', '$q', function($http, $q) {
             technologies: ['Java', 'Design&nbsp;Patterns', 'Android', 'JUnit', 'SVN']
         }]);
     };
+
+    this.getActivityItems = function() {
+        return $q.when([{
+            id: 'university',
+            timespan: {
+                begin: '04/2014',
+                end: '09/2014'
+            },
+            name: 'UNIVERSITY_NAME',
+            description: 'UNIVERSITY_DESCRIPTION',
+            image: 'img/tu-logo.png'
+        }, {
+            id: 'fraunhofer',
+            timespan: {
+                begin: '03/2013',
+                end: '12/2014'
+            },
+            name: 'FRAUNHOFER_NAME',
+            description: 'FRAUNHOFER_DESCRIPTION',
+            image: 'img/fraunhofer.gif'
+        }, {
+            id: 'tutoring',
+            timespan: {
+                begin: '10/2010',
+                end: 'PRESENT'
+            },
+            name: 'TUTORING_NAME',
+            description: 'TUTORING_DESCRIPTION',
+            image: 'img/tutoring.jpg'
+        }]);
+    };
 }]);

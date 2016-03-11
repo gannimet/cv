@@ -5,4 +5,8 @@ controllers.controller('experienceController',
         experienceService.getProjectItems().then(function(data) {
             $scope.projectItems = data;
         });
+
+        experienceService.getActivityItems().then(function(data) {
+            $scope.activityItems = data;
+        });
     }]);
