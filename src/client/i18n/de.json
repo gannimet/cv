@@ -7,6 +7,7 @@
     "LOCATION": "Ort",
     "CONTACT_REQUEST": "Kontaktanfrage",
     "EMAIL": "E-Mail",
+    "TELEPHONE": "Telefon: (0176) 647 01207",
     "SKILLS": "Fähigkeiten",
     "EXPERT": "Experte",
     "INTERMEDIATE": "Solide Kenntnisse",
@@ -29,5 +30,8 @@
     "UNIVERSITY_NAME": "Java-Tutor, Technische Universität Dresden",
     "UNIVERSITY_DESCRIPTION": "Im Rahmen der Lehrveranstaltung „Software- und Programmiertechnik im Maschinenwesen” habe ich Studenten verschiedener Fachrichtungen in Übungen und Praktika die objektorientierte Entwicklung mit Java vermittelt. Am Ende des Semesters war ich außerdem mit der Korrektur der Klausuren befasst. Inhalte des Kurses waren neben Java-Grundlagen auch objektorientierte Analyse mit verschiedenen Arten von UML-Diagrammen und Softwaredokumentation mit Javadoc.",
     "FRAUNHOFER_NAME": "Studentische Hilfskraft, Fraunhofer IVI",
-    "FRAUNHOFER_DESCRIPTION": "Im <a href=\"http://www.ivi.fraunhofer.de\">Fraunhofer-Institut für Verkehrs- und Infrastruktursysteme (IVI)</a> in Dresden habe ich in großer Eigenverantwortung Komponenten für eine vom Institut entwickelte Katastrophenschutz-Software in Java entwickelt. Außerdem war ich an einem Projekt zur Erstellung von Befahrbarkeitsanalysen in Abhängigkeit von Bodenverhältnissen, Geländeprofilen und Wetterdaten im Umfeld von ArcGIS beteiligt. Hierbei habe ich vor allem Python als Scripting-Sprache eingesetzt."
+    "FRAUNHOFER_DESCRIPTION": "Im <a href=\"http://www.ivi.fraunhofer.de\">Fraunhofer-Institut für Verkehrs- und Infrastruktursysteme (IVI)</a> in Dresden habe ich in großer Eigenverantwortung Komponenten für eine vom Institut entwickelte Katastrophenschutz-Software in Java entwickelt. Außerdem war ich an einem Projekt zur Erstellung von Befahrbarkeitsanalysen in Abhängigkeit von Bodenverhältnissen, Geländeprofilen und Wetterdaten im Umfeld von ArcGIS beteiligt. Hierbei habe ich vor allem Python als Scripting-Sprache eingesetzt.",
+    "RESPONSIBLE_FOR_CONTENT": "Verantwortlich für den Inhalt",
+    "CONTACT_INFORMATION": "Kontaktdaten",
+    "CONTACT_INTRO": "Falls mein Angebot für Sie interessant klingt, zögern Sie nicht mich zu kontaktieren."
 }

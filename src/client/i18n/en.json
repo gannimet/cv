@@ -7,6 +7,7 @@
     "LOCATION": "Location",
     "CONTACT_REQUEST": "Contact request",
     "EMAIL": "E-mail",
+    "TELEPHONE": "Phone: +49 (176) 647 01207",
     "SKILLS": "Skills",
     "EXPERT": "Expert",
     "INTERMEDIATE": "Intermediate",
@@ -29,5 +30,8 @@
     "UNIVERSITY_NAME": "Java tutor, Dresden University of Technology",
     "UNIVERSITY_DESCRIPTION": "I gave the course \"Software and programming technology in mechanical engineering\" during the summer semester of 2014 to students of various majors. It consisted of both lecturing them about object-oriented software development using Java and supervising their work in a practical course. I was also involved in the marking of their exams at the end of the semester. Contents of the course included Java language fundamentals, object-oriented analysis using different kinds of UML diagrams and software documentation using Javadoc.",
     "FRAUNHOFER_NAME": "Student assistant, Fraunhofer IVI",
-    "FRAUNHOFER_DESCRIPTION": "At <a href=\"http://www.ivi.fraunhofer.de\">Fraunhofer Institute for Transportation and Infrastructure Systems IVI</a> I autonomously developed components for a disaster management software written in Java. Moreover I worked on a project dealing with predicting trafficability for different kinds of vehicles based on soil, weather, and terrain data, which was implemented in Python for ArcGIS."
+    "FRAUNHOFER_DESCRIPTION": "At <a href=\"http://www.ivi.fraunhofer.de\">Fraunhofer Institute for Transportation and Infrastructure Systems IVI</a> I autonomously developed components for a disaster management software written in Java. Moreover I worked on a project dealing with predicting trafficability for different kinds of vehicles based on soil, weather, and terrain data, which was implemented in Python for ArcGIS.",
+    "RESPONSIBLE_FOR_CONTENT": "Responsible for contents",
+    "CONTACT_INFORMATION": "Contact information",
+    "CONTACT_INTRO": "If you're interested in what I have to offer, don't hesitate to contact me."
 }

@@ -1,3 +1,35 @@
-<div>
-    contact
+<div class="row">
+    <div class="col-xs-12">
+        <h1 data-ng-bind="'CONTACT' | translate"></h1>
+    </div>
+</div>
+
+<div class="row">
+    <div
+        class="col-xs-12 text-block"
+        data-ng-bind-html="'CONTACT_INTRO' | translate"></div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <h2 data-ng-bind-html="'RESPONSIBLE_FOR_CONTENT' | translate"></h2>
+        <p>
+            Richard Wotzlaw<br />
+            Reitbahnstraße 36<br />
+            01069 Dresden
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <h2 data-ng-bind-html="'CONTACT_INFORMATION' | translate"></h2>
+        <div class="no-margin-block">
+            <p data-ng-bind-html="'TELEPHONE' | translate"></p>
+            <p>
+                <span data-ng-bind-html="'EMAIL' | translate"></span>:
+                <a href="mailto:info@colimit.de">info@colimit.de</a>
+            </p>
+        </div>
+    </div>
 </div>
