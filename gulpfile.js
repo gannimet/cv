@@ -16,8 +16,8 @@ var jshint = require('gulp-jshint'),
 
 gulp.task('default', ['dev', 'watch']);
 
-gulp.task('dev', ['cleanup', 'images', 'i18n', 'build:dev', 'reload']);
-gulp.task('prod', ['cleanup', 'images', 'i18n', 'build:prod']);
+gulp.task('dev', ['cleanup', 'images', 'assets', 'i18n', 'build:dev', 'reload']);
+gulp.task('prod', ['cleanup', 'images', 'assets', 'i18n', 'build:prod']);
 
 gulp.task('build:dev', ['styles:dev', 'scripts:dev', 'html:dev', 'views:dev']);
 gulp.task('build:prod', ['styles:prod', 'scripts:prod', 'html:prod', 'views:prod']);
@@ -40,6 +40,12 @@ gulp.task('images', function() {
         .pipe(changed(imgDst))
         .pipe(imagemin())
         .pipe(gulp.dest(imgDst));
+});
+
+gulp.task('assets', function() {
+    return gulp
+        .src('./src/client/assets/**/*')
+        .pipe(gulp.dest('./dist/assets'));
 });
 
 gulp.task('i18n', function() {

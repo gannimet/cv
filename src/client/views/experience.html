@@ -11,6 +11,30 @@
 </div>
 
 <div class="row">
+    <div
+        class="col-xs-12 text-block">
+        <span
+            data-ng-bind-html="'CV_DOWNLOAD_HINT' | translate"></span>
+        <img
+            src="/img/word-icon.png"
+            class="download-link-image"
+            alt="Download as Word" />&nbsp;<a
+            href="{{ 'CV_DOWNLOAD_WORD_HREF' | translate }}"
+            class="word-link"
+            target="_self"
+            data-ng-bind-html="'CV_DOWNLOAD_WORD_TEXT' | translate"></a>
+        <img
+            src="/img/pdf-icon.png"
+            class="download-link-image"
+            alt="Download as PDF" />&nbsp;<a
+            href="{{ 'CV_DOWNLOAD_PDF_HREF' | translate }}"
+            class="pdf-link"
+            target="_self"
+            data-ng-bind-html="'CV_DOWNLOAD_PDF_TEXT' | translate"></a>
+    </div>
+</div>
+
+<div class="row">
     <div class="col-xs-12">
         <h2 data-ng-bind-html="'PROJECTS' | translate"></h2>
     </div>
